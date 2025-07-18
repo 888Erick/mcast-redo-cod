@@ -1,6 +1,39 @@
 body{
     background: #fffbf2;
 }
+
+
+.dropdown{
+    display: inline-block;
+}
+
+.dropdown button{
+    background-color: #000043;
+    color: #fffbf2;
+    padding: 9px;
+    border: none;
+    cursor: pointer;
+}
+.dropdown a{
+    display: block;
+    color: #fffbf2;
+    text-decoration: none;
+    padding: 9px;
+}
+.dropdown .content{
+    background-color: #000043;
+    position: absolute;
+    min-width: 9px;
+    box-shadow: 2px 2px 2px #000028;
+    display: none;
+}
+.dropdown:hover{
+    display: block;
+}
+.dropdown a:hover{
+    background-color: #01018b;
+}
+
 .btn{
     background-color: #000043;
     border: none;
@@ -25,92 +58,3 @@ body{
   background-color: #000043;
   border-radius: 25px;
 }
-
-.menu {
-    position: relative;
-    width: 10;
-}
-
-.menu > .label {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 10px;
-    padding: 9px;
-    border: 1px solid #000013;
-    border-radius: 45px;
-    font: bold;
-    cursor: pointer;
-    transform: all 0.3s ease-in;
-}
-
-.menu > .list {
-    position: absolute;
-    top: 10%;
-    width: 10%;
-    max-height: 0;
-    overflow: hidden;
-    padding: 0 5px;
-    border-radius: 4px;
-    list-style: none;
-    transform: max-height 0.35s ease-out;
-}
-
-.menu > .line {
-    display: none;
-    height: 2px;
-    opacity: 0;
-}
-
-.menu:hover > .label {
-    border-color: #000013;
-    background-color: #000043;
-    color: #fffbf2;
-}
-
-.menu:hover > .list {
-    max-height: 10px;
-    transition: max-height 0.7s ease-in;
-    border: 1px solid #fffbf2;
-}
-
-.menu:hover > line {
-    display: block;
-}
-
-
-
-.slider-container {
-    width: 100px;
-    margin: auto;
-    overflow: hidden;
-    position: relative;
-}
-.slider{
-    min-width: 100px;
-    transition: transform is ease-in-out, width is ease-in-out;
-}
-.dot-container{
-    z-index: 5;
-    position: absolute;
-    left: 50px;
-    transform: translateX(-50px);
-    bottom: 1.5em;
-    padding: 5px;
-    border-radius: 25px;
-}
-.dot{
-    height: 15px;
-    width: 15px;
-    margin: 0 5px;
-    background-color: #bbb;
-    border-radius: 50px;
-    display: inline-block;
-    transition: background-color 0.6 ease;
-    cursor: pointer;
-}
-.active-dot{
-    background-color: #ffffff;
-}
-
-

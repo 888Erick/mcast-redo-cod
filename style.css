@@ -29,6 +29,7 @@ div.dropdown-content{
     min-width: 9px;
     box-shadow: 2px 2px 2px #000028;
     display: none;
+    z-index: 100;
 }
 div.dropdown:hover div.dropdown-content{
     display: block;
@@ -196,5 +197,26 @@ ul{
   color: #fffbf2;
 }
 footer {
-    text-align: justify;
+  text-align: center;
+}
+
+footer .container{
+  width: 100%;
+  display: flex;
+}
+
+footer h3 {
+  text-align: center;
+}
+
+footer .column{
+  width: 100%;
+  list-style-type: none;
+  padding: 0;
+}
+
+footer .item{
+  padding: 50px 0 50px 0;
+  margin: 0 20px 0 20px;
+  text-align: center;
 }
